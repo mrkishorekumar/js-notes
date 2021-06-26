@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TagName</title>
+	<script type="text/javascript">
+		function change() {
+			var txt = document.getElementsByTagName('p')
+			txt[0].style.fontSize = "x-large";
+			txt[1].style.color = "red"
+			txt[2].style.fontStyle = "italic"
+			txt[3].style.fontWeight = "bold"
+			txt[4].style.backgroundColor = "red"
+		}
+	</script>
+</head>
+<body>
+	<p>This is Paragraph 1</p>
+	<p>This is Paragraph 2</p>
+	<p>This is Paragraph 3</p>
+	<p>This is Paragraph 4</p>
+	<p>This is Paragraph 5</p>
+	<button type="button" onclick="change()">Change</button>
+</body>
+</html>

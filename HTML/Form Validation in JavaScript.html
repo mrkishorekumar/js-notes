@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validations</title>
+	<script type="text/javascript">
+		function validate(){
+			var user = document.getElementById("username").value
+			var pass = document.getElementById("username").value
+			if(user.trim()=="" || pass.trim()==""){
+				alert("Please Enter Username and Password")
+				return false
+			}
+			else{
+				return true
+			}
+		}
+	</script>
+</head>
+<body>
+	<form onsubmit="return validate()" action="Change Image onmouseover and onmuseout events in JavaScript.html">
+		<input type="text" id="username" placeholder="Username"><br><br>
+
+		<input type="password" id="password" placeholder="Password"><br><br>
+
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>

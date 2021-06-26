@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image</title>
+    <script type="text/javascript">
+        function setNewImage(){
+            document.getElementById("img1").src = "pic2.png"
+        }
+        function setOldImage(){
+            document.getElementById("img1").src = "pic1.png"
+        }
+    </script>
+</head>
+<body>
+    <img id="img1" onmouseover="setNewImage()" onmouseout="setOldImage()" src="pic1.png" width="412" height="212" />
+</body>
+</html>
