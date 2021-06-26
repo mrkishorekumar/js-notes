@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QR Code</title>
+	<style>
+		.center{
+			margin: auto;
+			border: 3px solid green;
+			width: 60%;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="center">
+		<h1>QR Code Generater</h1>
+		<input type="type" id="qr-data">
+		<button type="button" onclick="generateQR()">Convert</button><br>
+		<br>
+		<center><div id="qrcode"></div></center><br>
+	</div>
+</body>
+
+	<script type="text/javascript" src="qrcode.min.js"></script>
+	<script type="text/javascript" src="qrcode.js"></script>
+	<script>
+		var qrdata = document.getElementById("qr-data");
+		var qrcode = new QRCode(document.getElementById("qrcode"));
+		function generateQR() {
+			var data = qrdata.value;
+			qrcode.makeCode(data);
+		}
+	</script>
+</html>
