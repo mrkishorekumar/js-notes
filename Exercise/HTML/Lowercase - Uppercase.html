@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lowercase - Uppercase</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		function upper() {
+			var text1;
+			text1 = document.getElementById("up").value;
+			document.getElementById("result1").innerHTML = text1.toUpperCase();
+		}
+
+		function lower(){
+			var text2;
+			text2 = document.getElementById("low").value;
+			document.getElementById("result2").innerHTML = text2.toLowerCase();
+		}
+	</script>
+	<style>
+		.center{
+			margin: auto;
+			border: 3px solid green;
+			text-align: center;
+			width: 60%;
+		}
+	</style>
+</head>
+<body>
+	<div class="center">
+		<h1>Lowercase to Uppercase</h1>
+		<input type="text" id="up" placeholder="Enter Lowercase Text">
+		<button type="button" onclick="upper()">Convert</button>
+		<p id="result1"></p>
+	</div>
+	<br>
+	<div class="center">
+		<h1>Uppercase to Lowercase</h1>
+		<input type="text" id="low" placeholder="Enter Uppercase Text">
+		<button type="button" onclick="lower()">Convert</button>
+		<p id="result2"></p>
+	</div>
+
+</body>
+</html>

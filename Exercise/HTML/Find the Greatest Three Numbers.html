@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find the Greatest Three Numbers</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		function check() {
+			var n1, n2, n3;
+			n1 = parseInt(document.getElementById("num1").value)
+			n2 = parseInt(document.getElementById("num2").value)
+			n3 = parseInt(document.getElementById("num3").value)
+			if (n1>n2 && n1>n3) {
+				document.getElementById("result").innerHTML = ("First Number is Greatest")
+			}
+			else if (n2>n3) {
+				document.getElementById("result").innerHTML = ("Second Number is Greatest")
+			}
+			else{
+				document.getElementById("result").innerHTML = ("Third Number is Greatest")
+			}
+		}
+	</script>
+	<style>
+		.center{
+			margin: auto;
+			border: 3px solid green;
+			width: 60%;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="center">
+		<h1>Find the Greatest Three Numbers</h1>
+		<input type="text" id="num1" placeholder="Enter First Number">
+		<input type="text" id="num2" placeholder="Enter Second Number">
+		<input type="text" id="num3" placeholder="Enter Third Number">
+		<button type="button" onclick="check()">Find</button>
+		<p id="result"></p>
+	</div>
+
+</body>
+</html>

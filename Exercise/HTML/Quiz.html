@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+	<script type="text/javascript">
+		function answers() {
+			var a = document.getElementById("ans1")
+			if(a.checked==true){
+				document.getElementById("result").innerHTML = ("Correct")
+			}
+			else{
+				document.getElementById("result").innerHTML = ("Wrong")
+			}
+			
+		}
+	</script>
+</head>
+<body>
+	<p>What is the Capital of India?</p>
+	<input type="radio" value="Delhi" id="ans1" name="ans">Delhi</input>
+	<input type="radio" value="Chennai" id="ans2" name="ans">Chennai</input><br><br>
+	<button type="button" onclick="answers()">Check Answer</button>
+	<p id="result"></p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Swap Two Numbers in JavaScript</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		function swap() {
+			var a, b;
+			a = parseInt(document.getElementById("num1").value);
+			b = parseInt(document.getElementById("num2").value);
+			[a, b] = [b, a]
+			document.getElementById("result1").innerHTML = a;
+			document.getElementById("result2").innerHTML = b;
+		}
+	</script>
+	<style>
+		.center{
+			margin: auto;
+			border: 3px solid green;
+			text-align: center;
+			width: 60%;
+			padding: 10px;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="center">
+		<h1>Swap Two Numbers in JavaScript</h1>
+		<input type="text" id="num1" placeholder="Enter First Number">
+		<input type="text" id="num2" placeholder="Enter Second Number">
+		<button type="button" onclick="swap()">Swap</button>
+		<p id="result1"></p>
+		<p id="result2"></p>
+	</div>
+
+</body>
+</html>

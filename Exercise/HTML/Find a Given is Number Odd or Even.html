@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find a Given is Number Odd or Even</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		function Odd_Even() {
+			var num;
+			num = parseInt(document.getElementById("number").value);
+			if (num%2==0) {
+				document.getElementById("result").innerHTML = ("It is Even")
+			}
+			else{
+				document.getElementById("result").innerHTML = ("It is Odd")
+			} 
+		}
+	</script>
+	<style>
+		.center{
+			margin: auto;
+			border: 3px solid green;
+			text-align: center;
+			width: 60%;
+			padding: 10px; 
+		}
+	</style>
+</head>
+<body>
+	<div class="center">
+		<h1>Find a Given is Number Odd or Even</h1>
+		<input type="text" id="number" placeholder="Enter any Number">
+		<button type="button" onclick="Odd_Even()">Check</button>
+		<p id="result"></p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find a Given Year is Leap Year or Not</title>
+	<link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
+	<script type="text/javascript">
+		function check() {
+			var a = document.getElementById("num").value
+			if(a%4==0 && a%100!=0 || a%400==0){
+				document.getElementById("result").innerHTML = "It is a Leap Year"
+			}
+			else{
+				document.getElementById("result").innerHTML = "It is not a Leap Year"
+			}
+		}
+	</script>
+	<style>
+		#center{
+			margin: auto;
+			width: 60%;
+			border: 3px solid green;
+			padding: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div id="center">
+		<h2>Find a Given Year is Leap Year or Not</h2>
+		<input type="text" name="year" id="num" placeholder="Enter a Year">
+		<button type="button" onclick="check()">Check</button>
+		<p id="result"></p>
+	</div>
+</body>
+</html>

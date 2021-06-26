@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find a Give Number is Positive or Negative Number</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		function check() {
+			var n;
+			n = parseInt(document.getElementById("num").value)
+			if (n>0) {
+				document.getElementById("result").innerHTML = ("It is a Positive Number")
+			}
+			else if (n<0) {
+				document.getElementById("result").innerHTML = ("It is a Negative Number")
+			}
+			else{
+				document.getElementById("result").innerHTML = ("The Number is Zero")
+			}
+		}
+	</script>
+	<style>
+		.center{
+			margin: auto;
+			border: 3px solid green;
+			text-align: center;
+			width: 60%;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="center">
+		<h1>Find a Give Number is Positive or Negative Number</h1>
+		<input type="text" id="num">
+		<button type="button" onclick="check()">Find</button>
+		<p id="result"></p>
+	</div>
+
+</body>
+</html>
